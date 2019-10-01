@@ -15,7 +15,6 @@
 
         <activity
             android:name="com.stfalcon.sample.features.main.MainActivity"
-            android:screenOrientation="portrait"
             android:theme="@style/AppThemeNoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -25,18 +24,15 @@
 
         <activity
             android:name="com.stfalcon.sample.features.demo.grid.PostersGridDemoActivity"
-            android:label="@string/action_images_grid"
-            android:screenOrientation="portrait"/>
+            android:label="@string/action_images_grid"/>
 
         <activity
             android:name="com.stfalcon.sample.features.demo.scroll.ScrollingImagesDemoActivity"
-            android:label="@string/action_scroll"
-            android:screenOrientation="portrait"/>
+            android:label="@string/action_scroll"/>
 
         <activity
             android:name="com.stfalcon.sample.features.demo.styled.StylingDemoActivity"
-            android:label="@string/action_style"
-            android:screenOrientation="portrait"/>
+            android:label="@string/action_style"/>
 
         <activity
             android:name="com.stfalcon.sample.features.demo.rotation.RotationDemoActivity"
