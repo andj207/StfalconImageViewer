@@ -63,7 +63,7 @@ abstract class RecyclingPagerAdapter<VH : RecyclingPagerAdapter.ViewHolder>
     override fun restoreState(state: Parcelable?, loader: ClassLoader?) {
         if (state != null && state is Bundle) {
             state.classLoader = loader
-            savedStates = if (state.containsKey(STATE)) state.getSparseParcelableArray(STATE) else SparseArray()
+            savedStates = if (state.containsKey(STATE)) state.getSparseParcelableArray(STATE) ?: SparseArray() else SparseArray()
         }
         super.restoreState(state, loader)
     }

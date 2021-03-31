@@ -103,7 +103,13 @@ internal class ImageViewerDialog<T>(
                     builderData.viewHolderLoader)
 
             onPageChange = { position -> builderData.imageChangeListener?.onImageChange(position) }
-            onDismiss = { dialog.dismiss() }
+            onDismiss = {
+                try {
+                    dialog.dismiss()
+                } catch (e: Throwable){
+                    e.printStackTrace()
+                }
+            }
         }
     }
 }
